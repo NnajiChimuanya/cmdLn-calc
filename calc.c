@@ -13,6 +13,29 @@ int main (int argc, char *argv[])
 	printf("Syntax : A operator B \n\n");
 	scanf("%f %c %f", &a, &operator, &b);
 
-	printf("You inputed; %.6f %c %6f", a, operator, b);
+	switch(operator)
+	{
+		case '/':
+			ans = a / b;
+			break;
+		case '+':
+			ans = a + b;
+			break;
+		case '-':
+			ans = a - b;
+			break;
+		case '^':
+			ans = pow(a, b);
+			break;
+		default:
+			goto fail;
+	}
+
+	printf("%f %c %f Equals to %.5f \n\n", a, operator, b, ans);
+	goto exit;
+
+fail:
+	printf("Operation Failed. \n");
+exit:
 	return 0;
 }
