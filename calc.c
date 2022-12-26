@@ -27,6 +27,9 @@ int main (int argc, char *argv[])
 		case '^':
 			ans = pow(a, b);
 			break;
+		case '*':
+			ans = a * b;
+			break;
 		default:
 			goto fail;
 	}
