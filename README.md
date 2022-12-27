@@ -1,7 +1,7 @@
 This is a simple Calculator written in C programming language.
 
 To run the program:
-> COmpile the program by 
+> Compile the program by 
 	```gcc calc.c```
 	which generates a 'a.exe' file
 > Then, input into the terminal
